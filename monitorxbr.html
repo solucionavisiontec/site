@@ -145,14 +145,21 @@
 	<!-- end breadcrumb section -->
 
 	<!-- single product -->
-
+	
 	<div class="single-product mt-100 mb-100">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<div class="single-product-img">
-						<img src="assets/img/products/monitor22xbr.jpg" alt="">
-					</div>
+					<div class="product-gallery">
+					<div class="main-image">
+    <img id="mainProductImage" src="assets/img/products/monitor22xbr.jpg" alt="Produto">
+   <div class="thumbs">
+    <img class="thumb active" src="assets/img/products/monitor1.jpg" alt="" onclick="setMainImage(this)">
+    <img class="thumb" src="assets/img/products/monitor2.jpg" alt="" onclick="setMainImage(this)">
+    <img class="thumb" src="assets/img/products/monitor3.jpg" alt="" onclick="setMainImage(this)">
+    <img class="thumb" src="assets/img/products/monitor4.jpg" alt="" onclick="setMainImage(this)">
+  </div>
+</div>
 				</div>
 				<div class="col-md-7">
 					<div class="single-product-content">
