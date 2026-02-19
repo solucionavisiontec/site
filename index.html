@@ -161,11 +161,12 @@
   <!-- ===== TOPO BRANCO ===== -->
   <header>
     <img src="img/visiontecp.svg" alt="Logo da Loja" class="logo">
-    <p>Confira nossos produtos e fale conosco através do WhatsApp!</p>
+    <p>Confira nossos produtos e fale conosco pelo WhatsApp</p>
   </header>
 
   <!-- ===== PRODUTOS ===== -->
   <main class="container">
+<<<<<<< HEAD
     <div class="grid">
 
       <div class="card">
@@ -273,6 +274,9 @@
         </div>
 
     </div>
+=======
+    <div class="grid" id="productsGrid"></div>
+>>>>>>> 3bb886c1598c113bb47e1bd7cf56006f8bd19e56
   </main>
 
   <!-- ===== BOTÃO FLUTUANTE WHATSAPP ===== -->
@@ -288,6 +292,34 @@
       <a href="https://wa.me/5581996921601" target="_blank">WhatsApp</a>
     </p>
   </footer>
+
+  <script src="products.js"></script>
+
+  <script>
+  const grid = document.getElementById("productsGrid");
+
+  Object.keys(products).forEach(id => {
+    const p = products[id];
+
+    const card = `
+      <div class="card">
+        <a href="produto.html?id=${id}" style="text-decoration:none;color:inherit">
+          <img src="${p.images[0]}" alt="${p.name}">
+          <div class="card-body">
+            <div>
+              <h3>${p.name}</h3>
+              <p class="price">${p.price}</p>
+            </div>
+            <div class="btn">Ver detalhes</div>
+          </div>
+        </a>
+      </div>
+    `;
+
+    grid.innerHTML += card;
+  });
+</script>
+
 
 </body>
 </html>
