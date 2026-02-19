@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Produto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #0b0f1a, #0d6efd);
+      color: #111;
+    }
+
+    header {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      max-width: 180px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 16px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+    }
+
+    .product-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    @media (max-width: 768px) {
+      .product-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      background: #f7f9fc;
+      padding: 12px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .thumbs {
+      display: flex;
+      gap: 10px;
+    }
+
+    .thumbs img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      border-radius: 10px;
+      border: 2px solid transparent;
+    }
+
+    .thumbs img:hover {
+      border-color: #0d6efd;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #0b0f1a;
+    }
+
+    .price-main {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #0d6efd;
+      margin: 12px 0 6px;
+    }
+
+    .installments {
+      color: #444;
+      margin-bottom: 16px;
+    }
+
+    .desc {
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .specs ul {
+      padding-left: 18px;
+      line-height: 1.7;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #0d6efd, #1a7cff);
+      color: white;
+      padding: 14px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 6px 14px rgba(13,110,253,0.35);
+      margin-top: 12px;
+    }
+
+    .buy-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(13,110,253,0.5);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">
+    <img src="img/visiontecp.svg" class="logo" alt="Logo">
+  </a>
+</header>
+
+<main class="container">
+  <div class="product-layout">
+
+    <!-- GALERIA -->
+    <div class="gallery">
+      <img id="mainImage" src="" alt="Produto">
+
+      <div class="thumbs" id="thumbs"></div>
+    </div>
+
+    <!-- INFORMAÇÕES -->
+    <div>
+      <h1 id="title"></h1>
+      <div class="price-main" id="price"></div>
+      <div class="installments" id="installments"></div>
+
+      <p class="desc" id="description"></p>
+
+      <div class="specs">
+        <h3>Especificações técnicas</h3>
+        <ul id="specs"></ul>
+      </div>
+
+      <a id="whatsappBtn" class="buy-btn" target="_blank">Comprar pelo WhatsApp</a>
+    </div>
+
+  </div>
+</main>
+
+<script>
+  const products = {
+    1: {
+      name: "Impressora Brother DCP-L5652DN",
+      price: "R$ 2.300,90",
+      installments: "ou 10x de R$ 259,90 sem juros",
+      description: "Impressora multifuncional laser monocromática ideal para escritórios, com alta velocidade e conectividade em rede.",
+      images: [
+        "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_02.png",
+        "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_03.png",
+        "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_04.png"
+      ],
+      specs: [
+        "Velocidade: até 42 ppm",
+        "Conectividade: USB, Ethernet",
+        "Duplex automático",
+        "Compatível com Windows, Linux e macOS"
+      ]
+    },
+
+    2: {
+      name: "Roteador TP-Link Archer C6",
+      price: "R$ 250,90",
+      installments: "ou 6x de R$ 41,82 sem juros",
+      description: "Roteador dual band AC1200 com excelente cobertura e estabilidade para casas e escritórios.",
+      images: [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGsEguu97SdXVHguL1imAZtT3DVijTZV0Mcw&s",
+        "https://m.media-amazon.com/images/I/61vhP4xH9JL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71+5Dxx3sCL._AC_SL1500_.jpg"
+      ],
+      specs: [
+        "Velocidade: até 1200 Mbps",
+        "Dual Band 2.4GHz e 5GHz",
+        "4 portas LAN Gigabit",
+        "Compatível com IPv6"
+      ]
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const product = products[id];
+
+  if (product) {
+    document.title = product.name;
+    document.getElementById("title").innerText = product.name;
+    document.getElementById("price").innerText = product.price;
+    document.getElementById("installments").innerText = product.installments;
+    document.getElementById("description").innerText = product.description;
+
+    const specsList = document.getElementById("specs");
+    product.specs.forEach(item => {
+      const li = document.createElement("li");
+      li.innerText = item;
+      specsList.appendChild(li);
+    });
+
+    const mainImage = document.getElementById("mainImage");
+    const thumbs = document.getElementById("thumbs");
+
+    mainImage.src = product.images[0];
+
+    product.images.forEach(img => {
+      const thumb = document.createElement("img");
+      thumb.src = img;
+      thumb.onclick = () => mainImage.src = img;
+      thumbs.appendChild(thumb);
+    });
+
+    const whatsappMsg = `Olá, tenho interesse no produto: ${product.name}`;
+    document.getElementById("whatsappBtn").href =
+      `https://wa.me/5581996921601?text=${encodeURIComponent(whatsappMsg)}`;
+  }
+</script>
+
+</body>
+</html>
+
