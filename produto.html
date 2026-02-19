@@ -1,206 +1,234 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalhes do Produto</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(135deg, #0b0f1a, #0d6efd);
-      color: #111;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detalhes do Produto</title>
 
-    header {
-      background: white;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    }
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0b0f1a, #0d6efd);
+}
 
-    .logo {
-      max-width: 180px;
-    }
+header {
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 16px;
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.2);
-    }
+.logo { max-width: 180px; }
 
-    .product-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-    }
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 16px;
+  background: white;
+  border-radius: 18px;
+}
 
-    @media (max-width: 768px) {
-      .product-layout {
-        grid-template-columns: 1fr;
-      }
-    }
+.product-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
 
-    .gallery img {
-      width: 100%;
-      border-radius: 14px;
-      background: #f7f9fc;
-      padding: 12px;
-      margin-bottom: 10px;
-      cursor: pointer;
-    }
+@media (max-width:768px){
+  .product-layout{grid-template-columns:1fr;}
+}
 
-    .thumbs {
-      display: flex;
-      gap: 10px;
-    }
+.gallery img {
+  width: 100%;
+  border-radius: 14px;
+  background: #f7f9fc;
+  padding: 12px;
+}
 
-    .thumbs img {
-      width: 70px;
-      height: 70px;
-      object-fit: contain;
-      border-radius: 10px;
-      border: 2px solid transparent;
-    }
+.info {
+  margin-left: 15px;
+}
 
-    .thumbs img:hover {
-      border-color: #0d6efd;
-    }
+.thumbs { display:flex; gap:10px; }
 
-    h1 {
-      margin-top: 0;
-      color: #0b0f1a;
-    }
+.thumbs img {
+  width:70px;
+  height:70px;
+  object-fit:contain;
+  border-radius:10px;
+  cursor:pointer;
+}
 
-    .price-main {
-      font-size: 1.6rem;
-      font-weight: bold;
-      color: #0d6efd;
-      margin: 12px 0 6px;
-    }
+.price-main {
+  font-size:1.8rem;
+  font-weight:bold;
+  color:#0d6efd;
+}
 
-    .installments {
-      color: #444;
-      margin-bottom: 16px;
-    }
+.pix {
+  color:#00a650;
+  font-weight:600;
+  font-size:1rem;
+  margin-left:6px;
+}
 
-    .desc {
-      margin-bottom: 16px;
-      line-height: 1.6;
-    }
+.specs-box{
+  margin-top:40px;
+}
 
-    .specs ul {
-      padding-left: 18px;
-      line-height: 1.7;
-    }
+.specs-box table{
+  width:100%;
+  border-collapse:collapse;
+}
 
-    .buy-btn {
-      display: inline-block;
-      background: linear-gradient(135deg, #0d6efd, #1a7cff);
-      color: white;
-      padding: 14px 22px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 600;
-      box-shadow: 0 6px 14px rgba(13,110,253,0.35);
-      margin-top: 12px;
-    }
+.specs-box td{
+  padding:12px;
+  border-bottom:1px solid #ddd;
+}
 
-    .buy-btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(13,110,253,0.5);
-    }
-  </style>
+.spec-label{
+  font-weight:bold;
+  width:40%;
+  color:#555;
+}
+
+.obs-box{
+  margin-top:30px;
+  padding:20px;
+  background:#f8f9fa;
+  border-radius:14px;
+  border-left:5px solid #0d6efd;
+}
+
+.obs-box h3{
+  margin-top:0;
+  color:#0d6efd;
+}
+
+.obs-box p{
+  margin:8px 0 0 0;
+  color:#444;
+  line-height:1.6;
+}
+
+.buy-btn {
+  display:inline-block;
+  background:#0d6efd;
+  color:white;
+  padding:14px 22px;
+  border-radius:12px;
+  text-decoration:none;
+  margin-top:20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <a href="index.html">
-    <img src="img/visiontecp.svg" class="logo" alt="Logo">
-  </a>
+<a href="index.html">
+<img src="img/visiontecp.svg" class="logo">
+</a>
 </header>
 
 <main class="container">
-  <div class="product-layout">
 
-    <!-- GALERIA -->
-    <div class="gallery">
-      <img id="mainImage" src="" alt="Produto">
+<div class="product-layout">
 
-      <div class="thumbs" id="thumbs"></div>
-    </div>
+<!-- GALERIA -->
+<div class="gallery">
+<img id="mainImage">
+<div class="thumbs" id="thumbs"></div>
+</div>
 
-    <!-- INFORMAÇÕES -->
-    <div>
-      <h1 id="title"></h1>
-      <div class="price-main" id="price"></div>
-      <div class="installments" id="installments"></div>
+<!-- INFO -->
+<div class="info">
+<h1 id="title"></h1>
 
-      <p class="desc" id="description"></p>
+<div class="price-main">
+<span id="price"></span>
+<span class="pix">no Pix</span>
+</div>
 
-      <div class="specs">
-        <h3>Especificações técnicas</h3>
-        <ul id="specs"></ul>
-      </div>
+<div id="installments"></div>
+<p id="description"></p>
 
-      <a id="whatsappBtn" class="buy-btn" target="_blank">Comprar pelo WhatsApp</a>
-    </div>
+<a id="whatsappBtn" class="buy-btn" target="_blank">
+Comprar pelo WhatsApp
+</a>
+</div>
 
-  </div>
+</div>
+
+<!-- ESPECIFICAÇÕES -->
+<div id="specs-container"></div>
+
 </main>
 
 <script src="products.js"></script>
 
 <script>
-  const params = new URLSearchParams(window.location.search);
-  const id = params.get("id");
-  const product = products[id];
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+const product = products[id];
 
-  if (!product) {
-    document.body.innerHTML = "<h2 style='color:white;text-align:center;margin-top:50px'>Produto não encontrado</h2>";
-  } else {
-    document.title = product.name;
+if (!product) {
+  document.body.innerHTML = "<h2 style='color:white;text-align:center;margin-top:50px'>Produto não encontrado</h2>";
+} else {
 
-    document.getElementById("title").innerText = product.name;
-    document.getElementById("price").innerText = product.price + " no PIX";
-    document.getElementById("installments").innerText = product.installments || "";
-    document.getElementById("description").innerText = product.description || "";
+  document.title = product.name;
+  title.innerText = product.name;
+  price.innerText = product.price;
+  installments.innerText = product.installments || "";
+  description.innerText = product.description || "";
 
-    // ESPECIFICAÇÕES
-    const specsList = document.getElementById("specs");
-    if (product.specs) {
-      product.specs.forEach(item => {
-        const li = document.createElement("li");
-        li.innerText = item;
-        specsList.appendChild(li);
-      });
+  // GALERIA
+  mainImage.src = product.images[0];
+  product.images.forEach(img => {
+    const thumb = document.createElement("img");
+    thumb.src = img;
+    thumb.onclick = () => mainImage.src = img;
+    thumbs.appendChild(thumb);
+  });
+
+  // WHATSAPP
+  whatsappBtn.href =
+    `https://wa.me/5581996921601?text=${encodeURIComponent("Olá, tenho interesse no produto: " + product.name)}`;
+
+  // ESPECIFICAÇÕES EM TABELA
+  if (product.specs) {
+    let html = `
+      <div class="specs-box">
+        <h2>Especificações do produto</h2>
+        <h3>Detalhes técnicos</h3>
+        <table>
+    `;
+
+    for (let key in product.specs) {
+      html += `
+        <tr>
+          <td class="spec-label">${key}</td>
+          <td>${product.specs[key]}</td>
+        </tr>
+      `;
     }
 
-    // GALERIA
-    const mainImage = document.getElementById("mainImage");
-    const thumbs = document.getElementById("thumbs");
+    html += `</table></div>`;
 
-    mainImage.src = product.images[0];
+// OBSERVAÇÕES
+if (product.observations) {
+  html += `
+    <div class="obs-box">
+      <h3>Observações</h3>
+      <p>${product.observations}</p>
+    </div>
+  `;
+}
 
-    product.images.forEach(img => {
-      const thumb = document.createElement("img");
-      thumb.src = img;
-      thumb.onclick = () => mainImage.src = img;
-      thumbs.appendChild(thumb);
-    });
-
-    // WHATSAPP
-    const whatsappMsg = `Olá, tenho interesse no produto: ${product.name}`;
-    document.getElementById("whatsappBtn").href =
-      `https://wa.me/5581996921601?text=${encodeURIComponent(whatsappMsg)}`;
+document.getElementById("specs-container").innerHTML = html;
   }
+}
 </script>
-
 
 </body>
 </html>
-
-
