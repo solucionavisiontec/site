@@ -152,63 +152,34 @@
   </div>
 </main>
 
+<script src="products.js"></script>
+
 <script>
-  const products = {
-    1: {
-      name: "Impressora Brother DCP-L5652DN",
-      price: "R$ 2.300,90",
-      installments: "ou 10x de R$ 259,90 sem juros",
-      description: "Impressora multifuncional laser monocromática ideal para escritórios, com alta velocidade e conectividade em rede.",
-      images: [
-        "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_02.png",
-        "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_03.png",
-        "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_04.png"
-      ],
-      specs: [
-        "Velocidade: até 42 ppm",
-        "Conectividade: USB, Ethernet",
-        "Duplex automático",
-        "Compatível com Windows, Linux e macOS"
-      ]
-    },
-
-    2: {
-      name: "Roteador TP-Link Archer C6",
-      price: "R$ 250,90",
-      installments: "ou 6x de R$ 41,82 sem juros",
-      description: "Roteador dual band AC1200 com excelente cobertura e estabilidade para casas e escritórios.",
-      images: [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGsEguu97SdXVHguL1imAZtT3DVijTZV0Mcw&s",
-        "https://m.media-amazon.com/images/I/61vhP4xH9JL._AC_SL1500_.jpg",
-        "https://m.media-amazon.com/images/I/71+5Dxx3sCL._AC_SL1500_.jpg"
-      ],
-      specs: [
-        "Velocidade: até 1200 Mbps",
-        "Dual Band 2.4GHz e 5GHz",
-        "4 portas LAN Gigabit",
-        "Compatível com IPv6"
-      ]
-    }
-  };
-
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
   const product = products[id];
 
-  if (product) {
+  if (!product) {
+    document.body.innerHTML = "<h2 style='color:white;text-align:center;margin-top:50px'>Produto não encontrado</h2>";
+  } else {
     document.title = product.name;
+
     document.getElementById("title").innerText = product.name;
     document.getElementById("price").innerText = product.price;
-    document.getElementById("installments").innerText = product.installments;
-    document.getElementById("description").innerText = product.description;
+    document.getElementById("installments").innerText = product.installments || "";
+    document.getElementById("description").innerText = product.description || "";
 
+    // ESPECIFICAÇÕES
     const specsList = document.getElementById("specs");
-    product.specs.forEach(item => {
-      const li = document.createElement("li");
-      li.innerText = item;
-      specsList.appendChild(li);
-    });
+    if (product.specs) {
+      product.specs.forEach(item => {
+        const li = document.createElement("li");
+        li.innerText = item;
+        specsList.appendChild(li);
+      });
+    }
 
+    // GALERIA
     const mainImage = document.getElementById("mainImage");
     const thumbs = document.getElementById("thumbs");
 
@@ -221,11 +192,13 @@
       thumbs.appendChild(thumb);
     });
 
+    // WHATSAPP
     const whatsappMsg = `Olá, tenho interesse no produto: ${product.name}`;
     document.getElementById("whatsappBtn").href =
       `https://wa.me/5581996921601?text=${encodeURIComponent(whatsappMsg)}`;
   }
 </script>
+
 
 </body>
 </html>
