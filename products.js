@@ -3,14 +3,14 @@ const products = {
     name: "Monitor 22' Philips Full HD",
     price: "R$ 350,00",
     installments: "ou 3x de R$ 330,00",
-    description: "Impressora laser profissional",
+    description: "Monitor Philips 223V5L - Tela de 22' | 1920x1080 (1080p FullHD)",
     images: [
       "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/mon1.png?raw=true",
       "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/monphilips2.png?raw=true",
       "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/monphilips3.png?raw=true",
       "https://acdn-us.mitiendanube.com/stores/001/228/749/products/20251015_140758-c39a2f383b6fd6b58a17607241399273-1024-1024.webp"
     ],
-    specs: ["42 ppm", "USB", "Ethernet"]
+    specs: ["Tela de 22", "Resolução de 1920x1080 (1080p FullHD)", "Conexões:" "VGA", "HDMI"]
   },
 
   2: {
@@ -80,6 +80,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
