@@ -1,8 +1,8 @@
 const products = {
   1: {
-    name: "Impressora Brother DCP-L5652DN",
-    price: "R$ 2.300,90",
-    installments: "ou 10x de R$ 259,90",
+    name: "Monitor 22" Philips",
+    price: "R$ 350,00" ,
+    installments: "ou 3x de R$ 330,00",
     description: "Impressora laser profissional",
     images: [
       "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/mon1.png?raw=true",
@@ -79,6 +79,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
