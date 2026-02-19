@@ -6,8 +6,8 @@ const products = {
     description: "Impressora laser profissional",
     images: [
       "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/mon1.png?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/mon3.png?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/mon2.png?raw=true"
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/monphilips2.png?raw=true",
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/monphilips3.png?raw=true"
     ],
     specs: ["42 ppm", "USB", "Ethernet"]
   },
@@ -79,6 +79,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
