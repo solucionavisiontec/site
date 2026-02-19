@@ -5,10 +5,10 @@ const products = {
     installments: "ou 3x de R$ 330,00",
     description: "Monitor Philips 223V5L - Tela de 22' | 1920x1080 (1080p FullHD)",
     images: [
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/mon1.png?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/monphilips2.png?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/monphilips3.png?raw=true",
-      "https://acdn-us.mitiendanube.com/stores/001/228/749/products/20251015_140758-c39a2f383b6fd6b58a17607241399273-1024-1024.webp"
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips01.webp?raw=true",
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips02.webp?raw=true",
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips03.webp?raw=true",
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips04.webp?raw=true"
     ],
     specs: ["Tela de 22", "Resolução de 1920x1080 (1080p FullHD)", "Conexões:" "VGA", "HDMI"]
   },
@@ -80,6 +80,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
