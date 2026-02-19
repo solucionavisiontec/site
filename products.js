@@ -1,7 +1,7 @@
 const products = {
   1: {
-    name: "Monitor 22" Philips",
-    price: "R$ 350,00" ,
+    name: "Monitor 22" Philips Full HD",
+    price: "R$ 350,00",
     installments: "ou 3x de R$ 330,00",
     description: "Impressora laser profissional",
     images: [
@@ -13,13 +13,13 @@ const products = {
   },
 
   2: {
-    name: "Roteador TP-Link Archer C6",
-    price: "R$ 117,09",
-    installments: "6x sem juros",
+    name: "Monitor 24" XBR (NOVO)",
+    price: "R$ 360,00",
+    installments: "3x sem juros",
     description: "Roteador dual band",
     images: [
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/monxbr1.png?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/monxbr2.png?raw=true"
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/monxbr2.png?raw=true",
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/monxbr1.png?raw=true"
     ],
     specs: ["Dual Band", "4 portas LAN"]
   },
@@ -79,6 +79,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
