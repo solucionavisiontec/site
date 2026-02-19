@@ -1,6 +1,6 @@
 const products = {
   1: {
-  name: "Impressora Brother DCP-L5652DN",
+  name: "Monitor",
   price: "R$ 2.300,90",
   installments: "ou 10x de R$ 259,90",
   description: "Impressora laser profissional",
@@ -88,6 +88,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
