@@ -1,25 +1,32 @@
 const products = {
   1: {
-    name: "Monitor 22' Philips Full HD",
-    price: "R$ 350,00",
-    installments: "ou 3x de R$ 330,00",
-    description: "Monitor Philips 223V5L - Tela de 22' | 1920x1080 (1080p FullHD)",
-    images: [
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips01.webp?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips02.webp?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips03.webp?raw=true"
-    ],
-    specs: ["Tela de 22", "Resolução de 1920x1080 (1080p FullHD)", "Conexões:", "VGA", "HDMI"]
+  name: "Impressora Brother DCP-L5652DN",
+  price: "R$ 2.300,90",
+  installments: "ou 10x de R$ 259,90",
+  description: "Impressora laser profissional",
+  images: [
+    "img/produtos_img/monphilips1.png",
+    "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/54/multifuncional_laser_monocromatica_dcpl5652dn_00.png"
+  ],
+
+  specs: {
+    "Marca": "Brother",
+    "Tipo": "Laser Monocromática",
+    "Velocidade": "42 ppm",
+    "Conexões": "USB, Ethernet"
   },
+  observations: "Produto com garantia de 1 ano. Não acompanha cabo HDMI. Imagens meramente ilustrativas."
+
+}
+,
 
   2: {
-    name: "Monitor 24' XBR (NOVO)",
-    price: "R$ 360,00",
-    installments: "3x sem juros",
+    name: "Roteador TP-Link Archer C6",
+    price: "R$ 117,09",
+    installments: "6x sem juros",
     description: "Roteador dual band",
     images: [
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/monxbr2.png?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/monxbr1.png?raw=true"
+      "https://images7.kabum.com.br/produtos/fotos/sync_mirakl/519877/xlarge/Roteador-Wireless-Tp-link-Dualband-Ac1200-Branco-Bivolt-Mtp0012_1763604522.jpg"
     ],
     specs: ["Dual Band", "4 portas LAN"]
   },
@@ -79,17 +86,3 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
