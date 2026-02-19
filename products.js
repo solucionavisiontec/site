@@ -7,8 +7,7 @@ const products = {
     images: [
       "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips01.webp?raw=true",
       "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips02.webp?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips03.webp?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips04.webp?raw=true"
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips03.webp?raw=true"
     ],
     specs: ["Tela de 22", "Resolução de 1920x1080 (1080p FullHD)", "Conexões:", "VGA", "HDMI"]
   },
@@ -80,6 +79,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
