@@ -161,118 +161,12 @@
   <!-- ===== TOPO BRANCO ===== -->
   <header>
     <img src="img/visiontecp.svg" alt="Logo da Loja" class="logo">
-    <p>Confira nossos produtos e fale conosco através do WhatsApp!</p>
+    <p>Confira nossos produtos e fale conosco pelo WhatsApp</p>
   </header>
 
   <!-- ===== PRODUTOS ===== -->
   <main class="container">
-    <div class="grid">
-
-      <div class="card">
-        <a href="produto.html?id=1" style="text-decoration:none;color:inherit">
-          <img src="/img/MONITOR 22 PHILIPS/monphilips1.png" alt="Produto 1">
-          <div class="card-body">
-            <div>
-              <h3>Impressora Brother DCP-L5652DN</h3>
-              <p class="price">R$ 2.300,90</p>
-            </div>
-            <div class="btn">Ver detalhes</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="produto.html?id=2" style="text-decoration:none;color:inherit">
-          <img src="https://images7.kabum.com.br/produtos/fotos/sync_mirakl/519877/xlarge/Roteador-Wireless-Tp-link-Dualband-Ac1200-Branco-Bivolt-Mtp0012_1763604522.jpg" alt="Produto 2">
-          <div class="card-body">
-            <div>
-              <h3>Roteador TP-Link Archer C6</h3>
-              <p class="price">R$ 117,09</p>
-            </div>
-            <div class="btn">Ver detalhes</div>
-          </div>
-        </a>
-        </div>
-
-      <div class="card">
-        <a href="produto.html?id=2" style="text-decoration:none;color:inherit">
-          <img src="https://images6.kabum.com.br/produtos/fotos/96696/96696_1_1526474061_gg.jpg" alt="Produto 3">
-          <div class="card-body">
-            <div>
-              <h3>Fonte Aerocool KCAS, 400W, 80 Plus White, PFC Ativo, Sem Cabo, Preto - KCAS-400W</h3>
-              <p class="price">R$ 229,90</p>
-            </div>
-            <div class="btn">Ver detalhes</div>
-          </div>
-        </a>
-        </div>
-
-      <div class="card">
-        <a href="produto.html?id=2" style="text-decoration:none;color:inherit">
-          <img src="https://images8.kabum.com.br/produtos/fotos/871308/gabinete-gamer-msi-mag-pano-110r-pz-white-mid-tower-lateral-em-vidro-4x-fans-argb-m-atx-branco-pano110rpzwht_1750252841_gg.jpg" alt="Produto 4">
-          <div class="card-body">
-            <div>
-              <h3>Gabinete Gamer MSI MAG Pano 110R PZ White, Mid Tower, Lateral em Vidro, 4x FANs ARGB, M-ATX, Branco - PANO110RPZWHT</h3>
-              <p class="price">R$ 667,90</p>
-            </div>
-            <div class="btn">Ver detalhes</div>
-          </div>
-        </a>
-        </div>
-
-      <div class="card">
-        <a href="produto.html?id=2" style="text-decoration:none;color:inherit">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGsEguu97SdXVHguL1imAZtT3DVijTZV0Mcw&s" alt="Produto 5">
-          <div class="card-body">
-            <div>
-              <h3>Roteador TP-Link Archer C6</h3>
-              <p class="price">R$ 250,90</p>
-            </div>
-            <div class="btn">Ver detalhes</div>
-          </div>
-        </a>
-        </div>
-
-      <div class="card">
-        <a href="produto.html?id=2" style="text-decoration:none;color:inherit">
-          <img src="https://images5.kabum.com.br/produtos/fotos/105015/ssd-sata-adata-su650-240gb-2-5-leitura-520mb-s-e-gravacao-450mb-s-preto-asu650ss-240gt-r_1724166980_gg.jpg" alt="Produto 6">
-          <div class="card-body">
-            <div>
-              <h3>SSD Adata SU650, SATA, 240GB, 2.5", Leitura: 520MB/s e Gravação: 450MB/s, Preto - ASU650SS-240GT-R</h3>
-              <p class="price">R$ 250,90</p>
-            </div>
-            <div class="btn">Ver detalhes</div>
-          </div>
-        </a>
-        </div>
-
-      <div class="card">
-        <a href="produto.html?id=2" style="text-decoration:none;color:inherit">
-          <img src="https://images6.kabum.com.br/produtos/fotos/102766/impressora-hp-laserjet-107w-laser-mono-110v-4zb78a_1692823237_gg.jpg" alt="Produto 7">
-          <div class="card-body">
-            <div>
-              <h3>Impressora HP 107W Laser Monocromática USB e Wi-Fi 220V</h3>
-              <p class="price">R$ 962,48</p>
-            </div>
-            <div class="btn">Ver detalhes</div>
-          </div>
-        </a>
-        </div>
-
-      <div class="card">
-        <a href="produto.html?id=2" style="text-decoration:none;color:inherit">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_780101-MLA100015102189_122025-F.webp" alt="Produto 8">
-          <div class="card-body">
-            <div>
-              <h3>Multifuncional Laser Hp Pro Modelo M4303fdw Mfp Laser Cor 33ppm A4 Cor Azu</h3>
-              <p class="price">R$ 3.563,00</p>
-            </div>
-            <div class="btn">Ver detalhes</div>
-          </div>
-        </a>
-        </div>
-
-    </div>
+    <div class="grid" id="productsGrid"></div>
   </main>
 
   <!-- ===== BOTÃO FLUTUANTE WHATSAPP ===== -->
@@ -288,6 +182,34 @@
       <a href="https://wa.me/5581996921601" target="_blank">WhatsApp</a>
     </p>
   </footer>
+
+  <script src="products.js"></script>
+
+  <script>
+  const grid = document.getElementById("productsGrid");
+
+  Object.keys(products).forEach(id => {
+    const p = products[id];
+
+    const card = `
+      <div class="card">
+        <a href="produto.html?id=${id}" style="text-decoration:none;color:inherit">
+          <img src="${p.images[0]}" alt="${p.name}">
+          <div class="card-body">
+            <div>
+              <h3>${p.name}</h3>
+              <p class="price">${p.price}</p>
+            </div>
+            <div class="btn">Ver detalhes</div>
+          </div>
+        </a>
+      </div>
+    `;
+
+    grid.innerHTML += card;
+  });
+</script>
+
 
 </body>
 </html>
