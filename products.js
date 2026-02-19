@@ -7,7 +7,8 @@ const products = {
     images: [
       "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/mon1.png?raw=true",
       "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/monphilips2.png?raw=true",
-      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/monphilips3.png?raw=true"
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/monphilips3.png?raw=true",
+      "https://acdn-us.mitiendanube.com/stores/001/228/749/products/20251015_140758-c39a2f383b6fd6b58a17607241399273-1024-1024.webp"
     ],
     specs: ["42 ppm", "USB", "Ethernet"]
   },
@@ -79,6 +80,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
