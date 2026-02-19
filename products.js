@@ -1,6 +1,6 @@
 const products = {
   1: {
-    name: "Monitor 22" Philips Full HD",
+    name: "Monitor 22' Philips Full HD",
     price: "R$ 350,00",
     installments: "ou 3x de R$ 330,00",
     description: "Impressora laser profissional",
@@ -79,6 +79,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
