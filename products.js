@@ -5,7 +5,10 @@ const products = {
   installments: "ou 10x de R$ 259,90",
   description: "Impressora laser profissional",
   images: [
-    "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2001.webp?raw=true"
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2001.webp?raw=true",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2002.webp?raw=true",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2003.webp?raw=true",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2004.webp?raw=true"
   ],
 
   specs: {
@@ -85,5 +88,6 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
