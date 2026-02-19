@@ -1,9 +1,9 @@
 const products = {
   1: {
-  name: "Monitor",
-  price: "R$ 2.300,90",
-  installments: "ou 10x de R$ 259,90",
-  description: "Impressora laser profissional",
+  name: "Monitor Philips 223V5 LCD 21,5” Full HD",
+  price: "R$ 399,00",
+  installments: "ou 5x de R$ 79,80",
+  description: "Se você busca qualidade de imagem e conforto visual, este monitor é a escolha certa! Com o SmartControl Lite, você ajusta brilho, contraste e cores com facilidade — ideal para quem trabalha, estuda ou joga. 🎯",
   images: [
     "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2001.webp?raw=true",
     "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2002.webp?raw=true",
@@ -12,12 +12,12 @@ const products = {
   ],
 
   specs: {
-    "Marca": "Brother",
-    "Tipo": "Laser Monocromática",
-    "Velocidade": "42 ppm",
-    "Conexões": "USB, Ethernet"
+    "Tela": "21,5” LCD Full HD (1920x1080)",
+    "Iluminação": "W-LED, baixo consumo de energia",
+    "Entradas": "HDMI e VGA",
+    "Cor": "Preto"
   },
-  observations: "Produto com garantia de 1 ano. Não acompanha cabo HDMI. Imagens meramente ilustrativas."
+  observations: "💬 Produto usado em ótimo estado, totalmente testado e revisado.\n✅ 30 dias de garantia contra defeitos de funcionamento.\n💰 Ótima oportunidade para montar seu setup com estilo e economia!\n📦 Acompanha cabo HDMI, cabo de energia e base."
 
 }
 ,
@@ -88,6 +88,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
