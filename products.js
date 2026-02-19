@@ -7,7 +7,7 @@ const products = {
   images: [
     "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2001.webp?raw=true",
     "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2002.webp?raw=true",
-    "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2003.webp?raw=true",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2003.webp?raw=true"
   ],
 
   specs: {
@@ -87,6 +87,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
