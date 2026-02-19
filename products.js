@@ -5,7 +5,7 @@ const products = {
   installments: "ou 10x de R$ 259,90",
   description: "Impressora laser profissional",
   images: [
-    "img/produtos_img/monphilips1.png",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2001.webp?raw=true",
     "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/54/multifuncional_laser_monocromatica_dcpl5652dn_00.png"
   ],
 
@@ -86,3 +86,4 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
