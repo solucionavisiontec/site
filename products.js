@@ -13,7 +13,7 @@ const products = {
   },
 
   2: {
-    name: "Monitor 24" XBR (NOVO)",
+    name: "Monitor 24' XBR (NOVO)",
     price: "R$ 360,00",
     installments: "3x sem juros",
     description: "Roteador dual band",
@@ -79,6 +79,7 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
 
