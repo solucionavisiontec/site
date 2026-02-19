@@ -6,8 +6,8 @@ const products = {
     description: "Impressora laser profissional",
     images: [
       "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/mon1.png?raw=true",
-      "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/54/multifuncional_laser_monocromatica_dcpl5652dn_00.png",
-      "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_01.png"
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/mon3.png?raw=true",
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/mon2.png?raw=true"
     ],
     specs: ["42 ppm", "USB", "Ethernet"]
   },
@@ -18,7 +18,8 @@ const products = {
     installments: "6x sem juros",
     description: "Roteador dual band",
     images: [
-      "https://images7.kabum.com.br/produtos/fotos/sync_mirakl/519877/xlarge/Roteador-Wireless-Tp-link-Dualband-Ac1200-Branco-Bivolt-Mtp0012_1763604522.jpg"
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/monxbr1.png?raw=true",
+      "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/monxbr2.png?raw=true"
     ],
     specs: ["Dual Band", "4 portas LAN"]
   },
@@ -78,5 +79,6 @@ const products = {
     specs: ["Dual Band", "4 portas LAN"]
   }
 };
+
 
 
