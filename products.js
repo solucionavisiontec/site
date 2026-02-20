@@ -21,9 +21,9 @@ const products = {
 },
 
 2: {
-  name: "Impressora Brother DCP-L5652DN",
-  price: "R$ 2.300,90",
-  installments: "ou 10x de R$ 259,90",
+  name: "Monitor XBR 24” (NOVO)",
+  price: "R$ 380,00",
+  installments: "ou 3x de R$ 135,00",
   description: "A multifuncional DCP-L5652DN é um equipamento laser durável, ideal para grupos de trabalho de médio porte, com médio ou alto volume de impressão. Grande economia e baixo custo por página devido ao seu toner de rendimento (8.000 páginas) incluso com o equipamento e toners de reposição para 12.000 impressões.",
   images: [
     "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/54/multifuncional_laser_monocromatica_dcpl5652dn_00.png",
@@ -32,16 +32,17 @@ const products = {
   ],
 
   specs: {
-    "Padrão de impressão frente e verso": "Sim",
-    "Velocidade de impressão em preto A4 (max. ppm)": "40",
-    "Tipo de consumível": "Cartucho de toner e unidade de cilindro",
-    "Tecnologia de impressão": "Monocromática"
+    "Brilho": "180~200cd/M2",
+    "Conexões": "HDMI e VGA",
+    "Resolução Máxima": "1920x1080 Pixels",
+    "Tecnologia do Monitor": "Led"
   },
   observations: "💬 Produto usado em ótimo estado, totalmente testado e revisado.\n✅ 30 dias de garantia contra defeitos de funcionamento."
 
 }
   
 };
+
 
 
 
