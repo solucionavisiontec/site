@@ -26,10 +26,10 @@ const products = {
   installments: "ou 3x de R$ 135,00",
   description: "MONITOR BRX 24” FULL HD | 75Hz | HDMI e VGA | Preto | Ideal para Trabalho, Estudos e Entretenimento.",
   images: [
-    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr01.webp?raw=true",
-    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr02.webp?raw=true",
-    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr03.webp?raw=true",
-    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr04.webp?raw=true"
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr01.png?raw=true",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr02.png?raw=true",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr03.png?raw=true",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr04.png?raw=true"
   ],
 
   specs: {
@@ -43,6 +43,7 @@ const products = {
 }
   
 };
+
 
 
 
