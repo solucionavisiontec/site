@@ -24,11 +24,12 @@ const products = {
   name: "Monitor XBR 24” (NOVO)",
   price: "R$ 380,00",
   installments: "ou 3x de R$ 135,00",
-  description: "A multifuncional DCP-L5652DN é um equipamento laser durável, ideal para grupos de trabalho de médio porte, com médio ou alto volume de impressão. Grande economia e baixo custo por página devido ao seu toner de rendimento (8.000 páginas) incluso com o equipamento e toners de reposição para 12.000 impressões.",
+  description: "MONITOR BRX 24” FULL HD | 75Hz | HDMI e VGA | Preto | Ideal para Trabalho, Estudos e Entretenimento.",
   images: [
-    "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/54/multifuncional_laser_monocromatica_dcpl5652dn_00.png",
-    "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_01.png",
-    "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_02.png"
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr01.webp?raw=true",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr02.webp?raw=true",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr03.webp?raw=true",
+    "https://github.com/solucionavisiontec/site/blob/main/img/monitor24xbr/xbr04.webp?raw=true"
   ],
 
   specs: {
@@ -42,6 +43,7 @@ const products = {
 }
   
 };
+
 
 
 
