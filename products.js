@@ -16,7 +16,7 @@ const products = {
     "Entradas": "HDMI e VGA",
     "Cor": "Preto"
   },
-  observations: "💬 Produto usado em ótimo estado, totalmente testado e revisado.\n✅ 30 dias de garantia contra defeitos de funcionamento.\n💰 Ótima oportunidade para montar seu setup com estilo e economia!\n📦 Acompanha cabo HDMI, cabo de energia e base."
+  observations: "💬 Produto usado em ótimo estado, totalmente testado e revisado.\n <br>✅ 30 dias de garantia contra defeitos de funcionamento.\n💰 Ótima oportunidade para montar seu setup com estilo e economia!\n📦 Acompanha cabo HDMI, cabo de energia e base."
 
 },
 
@@ -42,4 +42,5 @@ const products = {
 }
   
 };
+
 
