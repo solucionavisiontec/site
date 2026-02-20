@@ -1,8 +1,8 @@
 const products = {
   1: {
-  name: "Impressora Brother DCP-L5652DN",
-  price: "R$ 2.300,90",
-  installments: "ou 10x de R$ 259,90",
+  name: "Monitor Philips 223V5 LCD 21,5” Full HD",
+  price: "R$ 399,00",
+  installments: "ou 10x de R$ 39,90",
   description: "Se você busca qualidade de imagem e conforto visual, este monitor é a escolha certa! Com o SmartControl Lite, você ajusta brilho, contraste e cores com facilidade — ideal para quem trabalha, estuda ou joga.",
   images: [
     "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2001.webp?raw=true",
@@ -42,3 +42,4 @@ const products = {
 }
   
 };
+
