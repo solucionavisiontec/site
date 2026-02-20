@@ -1,6 +1,6 @@
 const products = {
   1: {
-  name: "Monitor Philips 223V5 LCD 21,5” Full HD",
+  name: "Monitor Philips LCD 21,5” Full HD",
   price: "R$ 300,00",
   installments: "ou 3x de R$ 110,00",
   description: "Se você busca qualidade de imagem e conforto visual, este monitor é a escolha certa! Com o SmartControl Lite, você ajusta brilho, contraste e cores com facilidade — ideal para quem trabalha, estuda ou joga.",
@@ -42,6 +42,7 @@ const products = {
 }
   
 };
+
 
 
 
