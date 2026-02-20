@@ -1,9 +1,9 @@
 const products = {
   1: {
-  name: "Monitor Philips 223V5 LCD 21,5” Full HD",
-  price: "R$ 399,00",
-  installments: "ou 5x de R$ 79,80",
-  description: "Se você busca qualidade de imagem e conforto visual, este monitor é a escolha certa! Com o SmartControl Lite, você ajusta brilho, contraste e cores com facilidade — ideal para quem trabalha, estuda ou joga. 🎯",
+  name: "Impressora Brother DCP-L5652DN",
+  price: "R$ 2.300,90",
+  installments: "ou 10x de R$ 259,90",
+  description: "Se você busca qualidade de imagem e conforto visual, este monitor é a escolha certa! Com o SmartControl Lite, você ajusta brilho, contraste e cores com facilidade — ideal para quem trabalha, estuda ou joga.",
   images: [
     "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2001.webp?raw=true",
     "https://github.com/solucionavisiontec/site/blob/main/img/monitor22philips/philips%2002.webp?raw=true",
@@ -18,79 +18,27 @@ const products = {
   },
   observations: "💬 Produto usado em ótimo estado, totalmente testado e revisado.\n✅ 30 dias de garantia contra defeitos de funcionamento.\n💰 Ótima oportunidade para montar seu setup com estilo e economia!\n📦 Acompanha cabo HDMI, cabo de energia e base."
 
+},
+
+2: {
+  name: "Impressora Brother DCP-L5652DN",
+  price: "R$ 2.300,90",
+  installments: "ou 10x de R$ 259,90",
+  description: "A multifuncional DCP-L5652DN é um equipamento laser durável, ideal para grupos de trabalho de médio porte, com médio ou alto volume de impressão. Grande economia e baixo custo por página devido ao seu toner de rendimento (8.000 páginas) incluso com o equipamento e toners de reposição para 12.000 impressões.",
+  images: [
+    "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/54/multifuncional_laser_monocromatica_dcpl5652dn_00.png",
+    "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_01.png",
+    "https://www.brother.com.br/-/media/brother/product-catalog-media/images/2022/08/26/12/55/multifuncional_laser_monocromatica_dcpl5652dn_02.png"
+  ],
+
+  specs: {
+    "Padrão de impressão frente e verso": "Sim",
+    "Velocidade de impressão em preto A4 (max. ppm)": "40",
+    "Tipo de consumível": "Cartucho de toner e unidade de cilindro",
+    "Tecnologia de impressão": "Monocromática"
+  },
+  observations: "💬 Produto usado em ótimo estado, totalmente testado e revisado.\n✅ 30 dias de garantia contra defeitos de funcionamento."
+
 }
-,
-
-  2: {
-    name: "Roteador TP-Link Archer C6",
-    price: "R$ 117,09",
-    installments: "6x sem juros",
-    description: "Roteador dual band",
-    images: [
-      "https://images7.kabum.com.br/produtos/fotos/sync_mirakl/519877/xlarge/Roteador-Wireless-Tp-link-Dualband-Ac1200-Branco-Bivolt-Mtp0012_1763604522.jpg"
-    ],
-    specs: ["Dual Band", "4 portas LAN"]
-  },
-
-  3: {
-    name: "Roteador TP-Link Archer C6",
-    price: "R$ 117,09",
-    installments: "6x sem juros",
-    description: "Roteador dual band",
-    images: [
-      "https://images7.kabum.com.br/produtos/fotos/sync_mirakl/519877/xlarge/Roteador-Wireless-Tp-link-Dualband-Ac1200-Branco-Bivolt-Mtp0012_1763604522.jpg"
-    ],
-    specs: ["Dual Band", "4 portas LAN"]
-  },
-
-  4: {
-    name: "Roteador TP-Link Archer C6",
-    price: "R$ 117,09",
-    installments: "6x sem juros",
-    description: "Roteador dual band",
-    images: [
-      "https://images7.kabum.com.br/produtos/fotos/sync_mirakl/519877/xlarge/Roteador-Wireless-Tp-link-Dualband-Ac1200-Branco-Bivolt-Mtp0012_1763604522.jpg"
-    ],
-    specs: ["Dual Band", "4 portas LAN"]
-  },
-
-  5: {
-    name: "Roteador TP-Link Archer C6",
-    price: "R$ 117,09",
-    installments: "6x sem juros",
-    description: "Roteador dual band",
-    images: [
-      "https://images7.kabum.com.br/produtos/fotos/sync_mirakl/519877/xlarge/Roteador-Wireless-Tp-link-Dualband-Ac1200-Branco-Bivolt-Mtp0012_1763604522.jpg"
-    ],
-    specs: ["Dual Band", "4 portas LAN"]
-  },
-
-  6: {
-    name: "Roteador TP-Link Archer C6",
-    price: "R$ 117,09",
-    installments: "6x sem juros",
-    description: "Roteador dual band",
-    images: [
-      "https://images7.kabum.com.br/produtos/fotos/sync_mirakl/519877/xlarge/Roteador-Wireless-Tp-link-Dualband-Ac1200-Branco-Bivolt-Mtp0012_1763604522.jpg"
-    ],
-    specs: ["Dual Band", "4 portas LAN"]
-  },
-
-  7: {
-    name: "Roteador TP-Link Archer C6",
-    price: "R$ 117,09",
-    installments: "6x sem juros",
-    description: "Roteador dual band",
-    images: [
-      "https://images7.kabum.com.br/produtos/fotos/sync_mirakl/519877/xlarge/Roteador-Wireless-Tp-link-Dualband-Ac1200-Branco-Bivolt-Mtp0012_1763604522.jpg"
-    ],
-    specs: ["Dual Band", "4 portas LAN"]
-  }
+  
 };
-
-
-
-
-
-
-
