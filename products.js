@@ -38,11 +38,12 @@ const products = {
     "Resolução Máxima": "1920x1080 Pixels",
     "Tecnologia do Monitor": "Led"
   },
-  observations: "💬 Produto usado em ótimo estado, totalmente testado e revisado.\n✅ 30 dias de garantia contra defeitos de funcionamento."
+  observations: "💬 Produto novo na caixa.<br>✅ 30 dias de garantia contra defeitos de funcionamento."
 
 }
   
 };
+
 
 
 
